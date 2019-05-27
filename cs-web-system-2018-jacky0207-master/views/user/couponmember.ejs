@@ -1,0 +1,15 @@
+<!--coupon.ejs-->
+<div class="row">
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+        </tr>
+        <% coupon.worksFor.forEach( function(model) { %>
+        <tr>
+            <td><%= model.id %></td>
+            <td><%= model.username %></td>
+        </tr>
+        <% }); %>
+    </table>
+</div>

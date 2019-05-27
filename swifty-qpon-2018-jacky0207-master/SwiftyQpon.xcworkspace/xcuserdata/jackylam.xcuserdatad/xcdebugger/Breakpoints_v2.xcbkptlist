@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftyQpon/Coupon.swift"
+            timestampString = "560794396.406997"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "Coupon"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "variable initialization expression of SwiftyQpon.Coupon.id : RealmSwift.RealmOptional&lt;Swift.Int&gt;"
+                  moduleName = "SwiftyQpon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylam/Documents/HKBUClasswork/2018-2019%20Semester%201/COMP4097%20Mobile%20Computing/SwiftyQpon/SwiftyQpon/Coupon.swift"
+                  timestampString = "560594630.149036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyQpon.Coupon.id.getter : RealmSwift.RealmOptional&lt;Swift.Int&gt;"
+                  moduleName = "SwiftyQpon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylam/Documents/HKBUClasswork/2018-2019%20Semester%201/COMP4097%20Mobile%20Computing/SwiftyQpon/SwiftyQpon/Coupon.swift"
+                  timestampString = "560594630.153476"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyQpon.Coupon.init() -&gt; SwiftyQpon.Coupon"
+                  moduleName = "SwiftyQpon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylam/Documents/HKBUClasswork/2018-2019%20Semester%201/COMP4097%20Mobile%20Computing/SwiftyQpon/SwiftyQpon/Coupon.swift"
+                  timestampString = "560594630.15702"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyQpon.Coupon.init(value: Any) -&gt; SwiftyQpon.Coupon"
+                  moduleName = "SwiftyQpon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylam/Documents/HKBUClasswork/2018-2019%20Semester%201/COMP4097%20Mobile%20Computing/SwiftyQpon/SwiftyQpon/Coupon.swift"
+                  timestampString = "560594630.161237"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyQpon.Coupon.init(realm: __ObjC.RLMRealm, schema: __ObjC.RLMObjectSchema) -&gt; SwiftyQpon.Coupon"
+                  moduleName = "SwiftyQpon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylam/Documents/HKBUClasswork/2018-2019%20Semester%201/COMP4097%20Mobile%20Computing/SwiftyQpon/SwiftyQpon/Coupon.swift"
+                  timestampString = "560594630.165796"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyQpon.Coupon.init(value: Any, schema: __ObjC.RLMSchema) -&gt; SwiftyQpon.Coupon"
+                  moduleName = "SwiftyQpon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jackylam/Documents/HKBUClasswork/2018-2019%20Semester%201/COMP4097%20Mobile%20Computing/SwiftyQpon/SwiftyQpon/Coupon.swift"
+                  timestampString = "560594630.170729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

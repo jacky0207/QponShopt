@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C96286F216DDDD800618135 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96286E216DDDD800618135 /* MapViewController.swift */; };
+		5C962871216DE28B00618135 /* Mall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C962870216DE28B00618135 /* Mall.swift */; };
+		5C96287F216E085000618135 /* CouponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96287E216E085000618135 /* CouponTableViewController.swift */; };
+		5C962881216E0CB400618135 /* CouponFoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C962880216E0CB400618135 /* CouponFoundTableViewController.swift */; };
+		5C962883216E14CC00618135 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C962882216E14CC00618135 /* SearchTableViewController.swift */; };
+		5C962885216E1C9D00618135 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C962884216E1C9D00618135 /* AccountViewController.swift */; };
+		5CE2C4DF216F4ABC007574F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE2C4DE216F4ABC007574F0 /* DetailViewController.swift */; };
+		5CE2C4E1216F576E007574F0 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2C4E0216F576E007574F0 /* default.realm */; };
+		5CE3C324216F01980053AB10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3C323216F01980053AB10 /* LoginViewController.swift */; };
+		5CE3C326216F19D10053AB10 /* RedeemedCouponTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3C325216F19D10053AB10 /* RedeemedCouponTableViewController.swift */; };
+		F348D6BF2164C181003A547B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F348D6BE2164C181003A547B /* AppDelegate.swift */; };
+		F348D6C12164C181003A547B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F348D6C02164C181003A547B /* FirstViewController.swift */; };
+		F348D6C32164C181003A547B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F348D6C22164C181003A547B /* SecondViewController.swift */; };
+		F348D6C62164C181003A547B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F348D6C42164C181003A547B /* Main.storyboard */; };
+		F348D6C82164C181003A547B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F348D6C72164C181003A547B /* Assets.xcassets */; };
+		F348D6CB2164C181003A547B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F348D6C92164C181003A547B /* LaunchScreen.storyboard */; };
+		F36CDF392169E7FA00109A77 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CDF382169E7FA00109A77 /* HomeTableViewController.swift */; };
+		F3EAE53E2169EAF000B4B661 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAE53D2169EAF000B4B661 /* Coupon.swift */; };
+		F8B29D4C699A7B88BFC618C7 /* Pods_SwiftyQpon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037CB03B418AD134D8F1D3E3 /* Pods_SwiftyQpon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		037CB03B418AD134D8F1D3E3 /* Pods_SwiftyQpon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyQpon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0971F88DB3C2C3188055B38F /* Pods-SwiftyQpon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyQpon.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyQpon/Pods-SwiftyQpon.release.xcconfig"; sourceTree = "<group>"; };
+		5C96286E216DDDD800618135 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5C962870216DE28B00618135 /* Mall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mall.swift; sourceTree = "<group>"; };
+		5C96287E216E085000618135 /* CouponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewController.swift; sourceTree = "<group>"; };
+		5C962880216E0CB400618135 /* CouponFoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponFoundTableViewController.swift; sourceTree = "<group>"; };
+		5C962882216E14CC00618135 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		5C962884216E1C9D00618135 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5CE2C4DE216F4ABC007574F0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5CE2C4E0216F576E007574F0 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		5CE3C323216F01980053AB10 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5CE3C325216F19D10053AB10 /* RedeemedCouponTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemedCouponTableViewController.swift; sourceTree = "<group>"; };
+		8AF2EB04817F3E819CEB70A6 /* Pods-SwiftyQpon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyQpon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyQpon/Pods-SwiftyQpon.debug.xcconfig"; sourceTree = "<group>"; };
+		F348D6BB2164C181003A547B /* SwiftyQpon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyQpon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F348D6BE2164C181003A547B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F348D6C02164C181003A547B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F348D6C22164C181003A547B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F348D6C52164C181003A547B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F348D6C72164C181003A547B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F348D6CA2164C181003A547B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F348D6CC2164C181003A547B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36CDF382169E7FA00109A77 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		F3EAE53D2169EAF000B4B661 /* Coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F348D6B82164C181003A547B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B29D4C699A7B88BFC618C7 /* Pods_SwiftyQpon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A21073F480089214757B5D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				037CB03B418AD134D8F1D3E3 /* Pods_SwiftyQpon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CA15ECD774307B8312D4A09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF2EB04817F3E819CEB70A6 /* Pods-SwiftyQpon.debug.xcconfig */,
+				0971F88DB3C2C3188055B38F /* Pods-SwiftyQpon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F348D6B22164C181003A547B = {
+			isa = PBXGroup;
+			children = (
+				F348D6BD2164C181003A547B /* SwiftyQpon */,
+				F348D6BC2164C181003A547B /* Products */,
+				6CA15ECD774307B8312D4A09 /* Pods */,
+				3A21073F480089214757B5D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F348D6BC2164C181003A547B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F348D6BB2164C181003A547B /* SwiftyQpon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F348D6BD2164C181003A547B /* SwiftyQpon */ = {
+			isa = PBXGroup;
+			children = (
+				5CE2C4E0216F576E007574F0 /* default.realm */,
+				F348D6BE2164C181003A547B /* AppDelegate.swift */,
+				F348D6C02164C181003A547B /* FirstViewController.swift */,
+				F348D6C22164C181003A547B /* SecondViewController.swift */,
+				F348D6C42164C181003A547B /* Main.storyboard */,
+				5CE3C323216F01980053AB10 /* LoginViewController.swift */,
+				5C962884216E1C9D00618135 /* AccountViewController.swift */,
+				5C96287E216E085000618135 /* CouponTableViewController.swift */,
+				5C962882216E14CC00618135 /* SearchTableViewController.swift */,
+				5C962880216E0CB400618135 /* CouponFoundTableViewController.swift */,
+				5C96286E216DDDD800618135 /* MapViewController.swift */,
+				F36CDF382169E7FA00109A77 /* HomeTableViewController.swift */,
+				5CE3C325216F19D10053AB10 /* RedeemedCouponTableViewController.swift */,
+				5CE2C4DE216F4ABC007574F0 /* DetailViewController.swift */,
+				F3EAE53D2169EAF000B4B661 /* Coupon.swift */,
+				5C962870216DE28B00618135 /* Mall.swift */,
+				F348D6C72164C181003A547B /* Assets.xcassets */,
+				F348D6C92164C181003A547B /* LaunchScreen.storyboard */,
+				F348D6CC2164C181003A547B /* Info.plist */,
+			);
+			path = SwiftyQpon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F348D6BA2164C181003A547B /* SwiftyQpon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F348D6CF2164C181003A547B /* Build configuration list for PBXNativeTarget "SwiftyQpon" */;
+			buildPhases = (
+				3C18917BC3925599ECD24183 /* [CP] Check Pods Manifest.lock */,
+				F348D6B72164C181003A547B /* Sources */,
+				F348D6B82164C181003A547B /* Frameworks */,
+				F348D6B92164C181003A547B /* Resources */,
+				BDB3F116742225FD5AC07E28 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyQpon;
+			productName = SwiftyQpon;
+			productReference = F348D6BB2164C181003A547B /* SwiftyQpon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F348D6B32164C181003A547B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jacky Lam";
+				TargetAttributes = {
+					F348D6BA2164C181003A547B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F348D6B62164C181003A547B /* Build configuration list for PBXProject "SwiftyQpon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F348D6B22164C181003A547B;
+			productRefGroup = F348D6BC2164C181003A547B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F348D6BA2164C181003A547B /* SwiftyQpon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F348D6B92164C181003A547B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F348D6CB2164C181003A547B /* LaunchScreen.storyboard in Resources */,
+				5CE2C4E1216F576E007574F0 /* default.realm in Resources */,
+				F348D6C82164C181003A547B /* Assets.xcassets in Resources */,
+				F348D6C62164C181003A547B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C18917BC3925599ECD24183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyQpon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB3F116742225FD5AC07E28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyQpon/Pods-SwiftyQpon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyQpon/Pods-SwiftyQpon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F348D6B72164C181003A547B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE3C326216F19D10053AB10 /* RedeemedCouponTableViewController.swift in Sources */,
+				F36CDF392169E7FA00109A77 /* HomeTableViewController.swift in Sources */,
+				5C962885216E1C9D00618135 /* AccountViewController.swift in Sources */,
+				F3EAE53E2169EAF000B4B661 /* Coupon.swift in Sources */,
+				5C96287F216E085000618135 /* CouponTableViewController.swift in Sources */,
+				5C962871216DE28B00618135 /* Mall.swift in Sources */,
+				F348D6C32164C181003A547B /* SecondViewController.swift in Sources */,
+				F348D6BF2164C181003A547B /* AppDelegate.swift in Sources */,
+				F348D6C12164C181003A547B /* FirstViewController.swift in Sources */,
+				5C962883216E14CC00618135 /* SearchTableViewController.swift in Sources */,
+				5C962881216E0CB400618135 /* CouponFoundTableViewController.swift in Sources */,
+				5CE2C4DF216F4ABC007574F0 /* DetailViewController.swift in Sources */,
+				5CE3C324216F01980053AB10 /* LoginViewController.swift in Sources */,
+				5C96286F216DDDD800618135 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F348D6C42164C181003A547B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F348D6C52164C181003A547B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F348D6C92164C181003A547B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F348D6CA2164C181003A547B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F348D6CD2164C181003A547B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F348D6CE2164C181003A547B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F348D6D02164C181003A547B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF2EB04817F3E819CEB70A6 /* Pods-SwiftyQpon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftyQpon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.SwiftyQpon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F348D6D12164C181003A547B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0971F88DB3C2C3188055B38F /* Pods-SwiftyQpon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftyQpon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.SwiftyQpon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F348D6B62164C181003A547B /* Build configuration list for PBXProject "SwiftyQpon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F348D6CD2164C181003A547B /* Debug */,
+				F348D6CE2164C181003A547B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F348D6CF2164C181003A547B /* Build configuration list for PBXNativeTarget "SwiftyQpon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F348D6D02164C181003A547B /* Debug */,
+				F348D6D12164C181003A547B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F348D6B32164C181003A547B /* Project object */;
+}

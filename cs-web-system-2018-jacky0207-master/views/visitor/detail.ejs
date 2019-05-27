@@ -1,0 +1,72 @@
+<!--detail.ejs-->
+<div class="row">
+    <div class="col-12 col-md-5">
+        <img src="<%= visitor.image %>" alt="Image" width="100%">
+    </div>
+    
+    <div class="col-12 col-md-7">
+        <table class="table table-bordered">
+            <tr>
+                <td><b><%= visitor.restaurant %></b></td>
+            </tr>
+            <tr>
+                <td><b><%= visitor.title %></b></td>
+            </tr>
+            <tr>
+                <td><b>Coins: </b><%= visitor.coin %></td>
+            </tr>
+            <tr>
+                <td><b>Address: </b><%= visitor.mall %>, <%= visitor.district %></td>
+            </tr>
+            <tr id="<%= (visitor.till < new Date()) ? "overtime" : "" %>">
+                <td><b>Valid Till: </b><%= visitor.till %></td>
+            </tr>
+            <tr>
+                <td><%= visitor.details %></td>
+            </tr>
+            <%
+            if (req.session.userRole == 'member' && !redeemed && visitor.till >= new Date())
+            {
+            %>
+            <tr>
+                <td><button type="button" onclick="AddSupervisee('<%= visitor.id %>')">AddSupervisee</button></td>
+            </tr>
+            <%
+            }
+            %>
+        </table>
+    </div>
+</div>
+
+<style>
+    #overtime {
+        background-color: #f2dede !important;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        // Set menu actice
+        $("#search").addClass('active');
+    });
+
+    function AddSupervisee(id) {
+
+        var r = confirm("Add Supervisee?");
+        if (r == true) {
+        
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/user/addSupervisee?pid=" + id, true);
+            xhr.onload = function(e) {
+                var jsonResponse = JSON.parse(this.responseText);
+                alert(jsonResponse.message);
+                location.reload(true); 
+            };
+            xhr.send();
+            
+        } else {
+            alert("cancelled");
+        }
+
+    } 
+</script>

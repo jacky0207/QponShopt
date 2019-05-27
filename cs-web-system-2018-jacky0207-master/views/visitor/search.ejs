@@ -1,0 +1,86 @@
+<!--paginate.ejs-->
+<div class="row">
+    <div class="col-12 col-md-8">
+        <div class="row">
+            <% visitors.forEach( function(model) { %>
+            <div class="col-12 col-md-6">
+                <div class="container card">
+                    <img src="<%= model.image %>" alt="Image" width="100%">
+                    <a href="/visitor/detail/<%= model.id %>"><%= model.restaurant %></a>
+                    <label><%= model.title %></label>
+                    <label>Coins: <%= model.coin %></label>
+                </div>
+                
+                <br>
+            </div>
+            <% }); %>
+        </div>
+
+        <div class="row">
+            <% const current = Number(req.query.page || 1); %>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="/visitor/search/?page=<%= Math.max(current-1, 1) %>&district=<%= data.district %>&coin=<%= data.coin %>&till=<%= data.till %>">Previous</a>
+                    </li>
+            
+                    <% for (i = 1; i <= count; i++) { %>
+                        <li class="page-item">
+                            <a class="page-link" href="/visitor/search/?page=<%= i %>&district=<%= data.district %>&coin=<%= data.coin %>&till=<%= data.till %>"><%= i %></a>
+                        </li>
+                    <% } %>
+            
+                    <li class="page-item">
+                        <a class="page-link" href="/visitor/search/?page=<%= Math.min(current+1, count) %>&district=<%= data.district %>&coin=<%= data.coin %>&till=<%= data.till %>">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <form action="/visitor/search" method="POST">
+            <h4>Search</h4>
+            <div class="form-group">
+                <label>District</label>
+                <select class="form-control" name="Visitor[district]">
+                    <option value="">Please select one</option>
+                    <option value="HK Island" <%= (data.district == "HK Island") ? "selected" : "" %>>HK Island</option>
+                    <option value="Kowloon" <%= (data.district == "Kowloon") ? "selected" : "" %>>Kowloon</option>
+                    <option value="New Territories" <%= (data.district == "New Territories") ? "selected" : "" %>>New Territories</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Coins Range:</label>
+                <input type="text" id="coin" name="Visitor[coin]" value="<%= data.coin %>" />
+            </div>
+
+            <div class="form-group">
+                <label>Deal Valid Till</label>
+                <input type="text" class="form-control" name="Visitor[till]" data-provide="datepicker" id="till" value="<%= data.till %>">    
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Set menu actice
+        $("#search").addClass('active');
+
+        // Coin range
+        $("#coin").ionRangeSlider({
+            min: 0,
+            max: 10000,
+            grid: true,
+            type: "double",
+            prefix: "$"
+        });
+
+        // Date picker
+        $('#till').datepicker({
+            minDate: new Date()
+        });
+    });
+</script>

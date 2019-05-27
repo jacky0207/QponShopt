@@ -1,0 +1,93 @@
+<!--index.ejs-->
+<div class="row">
+    <div class="col-12 col-md-4">
+        <label>HK Island</label>
+    <%
+        var count = 0;
+        visitors.forEach( function(model) {
+            if (count == 2)
+            {
+                return;
+            }
+
+            if(model.district == "HK Island")
+            {
+                count++;
+    %>
+        <div class="container card">
+            <img src="<%= model.image %>" alt="Image" width="100%">
+            <a href="/visitor/detail/<%= model.id %>"><%= model.restaurant %></a>
+            <label><%= model.title %></label>
+            <label>Coins: <%= model.coin %></label>
+        </div>
+        
+        <br>
+    <%
+            }
+        });
+    %>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <label>Kowloon</label>
+    <%
+        count = 0;
+        visitors.forEach( function(model) {
+            if (count == 2)
+            {
+                return;
+            }
+
+            if(model.district == "Kowloon")
+            {
+                count++;
+    %>
+        <div class="container card">
+            <img src="<%= model.image %>" alt="Image" width="100%">
+            <a href="/visitor/detail/<%= model.id %>"><%= model.restaurant %></a>
+            <label><%= model.title %></label>
+            <label>Coins: <%= model.coin %></label>
+        </div>
+
+        <br>
+    <%    
+            }
+        });
+    %>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <label>New Territories</label>
+    <%
+        count = 0;
+        visitors.forEach( function(model) {
+            if (count == 2)
+            {
+                return;
+            }
+
+            if(model.district == "New Territories")
+            {
+                count++;
+    %>
+        <div class="container card">
+            <img src="<%= model.image %>" alt="Image" width="100%">
+            <a href="/visitor/detail/<%= model.id %>"><%= model.restaurant %></a>
+            <label><%= model.title %></label>
+            <label>Coins: <%= model.coin %></label>
+        </div>
+        
+        <br>
+    <%    
+            }
+        });
+    %>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Set menu actice
+        $("#home").addClass('active');
+    });
+</script>

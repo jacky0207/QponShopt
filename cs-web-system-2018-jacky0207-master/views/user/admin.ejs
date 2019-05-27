@@ -1,0 +1,57 @@
+<!--admin.ejs-->
+<div class="row">
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Rectaurant</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <% visitors.forEach( function(model) { %>
+        <tr id="<%= (model.till < new Date()) ? "overtime" : "" %>">
+            <td class="success"><%= model.id %></td>
+            <td><a href="/visitor/detail/<%= model.id %>"><%= model.title %></a></td>
+            <td><%= model.restaurant %></td>
+            <td><a href="/user/update/<%= model.id %>">Update</a></td>
+            <!-- <td><a href="/user/delete/<%= model.id %>">Delete</a></td> -->
+            <td><button type="submit" class="btn btn-link" onclick="deletePerson('<%= model.id %>')">Delete</button></td>
+            <td><a href="/user/couponmember/<%= model.id %>">Member</a></td>
+        </tr>
+        <% }); %>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Set menu actice
+        $("#admin").addClass('active');
+    });
+
+    function deletePerson(id) {
+
+        var r = confirm("Confirm Delete?");
+        if (r == true) {
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/user/delete/" + id, true);
+            xhr.onload = function(e) {
+                var jsonResponse = JSON.parse(this.responseText);
+                alert(jsonResponse.message);
+                location.reload(true); 
+            };
+            xhr.send();
+            
+        } else {
+            alert("cancelled");
+        }
+
+    } 
+</script>
+
+<style>
+    #overtime {
+        background-color: #f2dede !important;
+    }
+</style>

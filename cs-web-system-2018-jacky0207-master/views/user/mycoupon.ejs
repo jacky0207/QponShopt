@@ -1,0 +1,33 @@
+<!--mycoupon.ejs-->
+<div class="row">
+    <div class="col-md-6">My coupons</div>
+    <div class="col-md-6 text-right">Account Balance: <%= user.coin %> coins.</div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-4">
+        <%
+            user.supervises.forEach( function(model) {
+        %>
+        <div class="container card">
+            <img src="<%= model.image %>" alt="Image" width="100%">
+            <a href="/visitor/detail/<%= model.id %>"><%= model.restaurant %></a>
+            <label><%= model.title %></label>
+            <%
+                var dateObj = new Date(model.till);
+                var month = dateObj.getMonth()+1;
+                var neededFormat = ((month < 10) ? "0" : "") + (dateObj.getMonth()+1) + '/' + dateObj.getDate() + '/' + dateObj.getUTCFullYear();
+            %>
+            <label>Expiry Date: <%= neededFormat %></label>
+        </div>
+        <%
+            });
+        %>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Set menu actice
+        $("#mycoupon").addClass('active');
+    });
+</script>
